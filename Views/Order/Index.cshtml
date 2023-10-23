@@ -1,0 +1,52 @@
+
+<div class="text-center">
+<h1>@ViewData["Title"]</h1>
+    <div class="d-grid gap-1">
+    <a asp-controller="Order" asp-action="OrderCad" class="btn btn-primary btn-lg">Cadastrar Pedido</a>
+</div>
+<br>
+    <table class="table table-bordered border-dark">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Cliente</th>
+      <th scope="col">Contato</th>
+      <th scope="col">Hora do Pedido</th>
+      <th scope="col">Estado</th>
+      <th scope="col">Ação</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>+55(16) 9934-4923</td>
+      <td>18:42</td>
+      <td>Entregue</td>
+      <td><a class="btn btn-primary btn-sm">Editar</a>
+          <a class="btn btn-danger btn-sm">Excluir</a>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>+55(16) 3325-6425</td>
+      <td>18:50</td>
+      <td>Cancelado</td>
+      <td><a class="btn btn-primary btn-sm">Editar</a>
+          <a class="btn btn-danger btn-sm">Excluir</a>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Larry the Bird</td>
+      <td>+55(16) 5324-3845</td>
+      <td>19:03</td>
+      <td>Em andamento</td>
+      <td><a class="btn btn-primary btn-sm">Editar</a>
+          <a class="btn btn-danger btn-sm">Excluir</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>

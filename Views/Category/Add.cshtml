@@ -1,0 +1,27 @@
+@model AMS23_Carousel.Models.CategoryModel
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="text-center">
+    <div id="BackColor">
+    <forms>
+        ID:<input asp-type="text" asp-action="Category"><br>
+        Name:<input asp-type="text"asp-action="Category"><br>
+        <input type="button" asp-action="Category" value="Adicionar Categoria">
+    </forms>
+
+    <partial name="_carousel"/>
+    </div>
+    @using (Html.BeginForm("Add", "Category", FormMethod.Post))
+    {
+        
+
+}
+</body>
+</html>
