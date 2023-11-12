@@ -1,0 +1,30 @@
+@model CategoryModel
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="text-center">
+    <div id="BackColor">
+
+        
+    <partial name="_carousel"/>
+    </div>
+    @using  (Html.BeginForm("CatEdit", "Category", FormMethod.Post))
+    {
+        <forms>
+    Id:<input type="text" asp-for="Id" readonly="true" value="@Model.Id"><br>
+    Descrição:<input type="text" asp-for="Description" value="@Model.Description"><br>
+        Nome:<input type="text" asp-for="Name" value="@Model.Name"><br>
+        Ativo?:<input type="checkbox" asp-for="IsActive"><br>
+        <input type="submit" value="Alterar Categoria">
+    </forms>
+
+
+}
+</body>
+</html>

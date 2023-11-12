@@ -1,7 +1,16 @@
+using AMS23_Carousel.Data.Repository;
+using Microsoft.EntityFrameworkCore;
+using AMS23_Carousel.Models;
+using AMS23_Carousel.Models.Interfaces;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+    builder.Services.AddDbContext<ApplicationDataContext>
+    (option => option.UseSqlite(builder.Configuration.GetConnectionString("DefaultContext")));
+    builder.Services.AddScoped<IRepositoryBase<CategoryModel, Guid>, RepositoryBase<CategoryModel, Guid>>();
 
 var app = builder.Build();
 
@@ -19,6 +28,8 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
+
+
 
 app.MapControllerRoute(
     name: "default",

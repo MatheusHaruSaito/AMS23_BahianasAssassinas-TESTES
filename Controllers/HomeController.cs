@@ -1,7 +1,7 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using AMS23_Carousel.Models;
-
+using AMS23_Carousel.Data;
 
 namespace AMS23_Carousel.Controllers;
 

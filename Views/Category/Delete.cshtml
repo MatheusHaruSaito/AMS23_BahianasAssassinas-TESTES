@@ -1,0 +1,27 @@
+@model CategoryModel
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="text-center">
+    <div id="BackColor">
+
+
+    <partial name="_carousel"/>
+    </div>
+    <h1>Realmente deseja Apagar esta Categoria?</h1>
+    <h2>Nome: @Model.Name</h2>
+    <h2>Description: @Model.Description</h2>
+    <h2>ID: @Model.Id</h2>
+    <a class="btn btn-primary" asp-action="Index" asp-controller="Category">Não</a>
+    <a class="btn btn-danger"  asp-route-Id="@Model.Id" asp-action="DelCat" asp-controller="Category">Sim</a>
+
+
+
+</body>
+</html>

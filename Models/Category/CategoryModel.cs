@@ -7,14 +7,14 @@ namespace AMS23_Carousel.Models
 {
     public class CategoryModel
     {
-        public CategoryModel(string description)
+        public CategoryModel()
         {
             Id = Guid.NewGuid();
-            Description = description;
             IsActive = true;
         }
         public Guid Id{get;set;}
-        public string Description{get;set;}
+         public string Name{get;set;} ="null";
+        public string Description{get;set;} ="null";
         public bool IsActive{get;set;}
     }
 }
