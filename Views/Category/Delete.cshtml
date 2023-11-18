@@ -1,0 +1,31 @@
+@model AMS23_Carousel.Models.CategoryModel
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="text-center">
+    <div id="BackColor">
+    
+
+    <partial name="_carousel"/>
+  
+        <h1>Realmente deseja apagar @Model.Name?</h1>
+        <h2>Descrição: @Model.Description</h2>
+        <h2>Ativo?: @if(@Model.IsActive)
+        {
+         <label>Sim</label>
+        }else
+        {
+            <label>Não</label>
+        }</h2>
+        <h2>Id: @Model.Id</h2>
+        <a class="btn btn-danger" asp-controller="Category" asp-action="Index">Não</a>
+        <a class="btn btn-primary" asp-route-Id="@Model.Id" asp-route-Name="@Model.Name" asp-route-Description="@Model.Description" asp-route-IsActive="@Model.IsActive" asp-controller="Category" asp-action="DeleteCat">Sim</a>
+  </div>
+</body>
+</html>

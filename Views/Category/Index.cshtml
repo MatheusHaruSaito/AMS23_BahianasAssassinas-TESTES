@@ -1,4 +1,4 @@
-
+@model IEnumerable<CategoryModel>
 <div class="text-center">
     <h1>@ViewData["Title"]</h1>
     <div class="d-grid grid-gap-2">
@@ -7,7 +7,33 @@
     <br>
     <div id="BackColor">
     <forms>
-        
+<table class="table table-bordered border-dark">
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Nome</th>
+      <th scope="col">Descrição</th>
+      <th scope="col">Ativo?</th>
+      <th scope="col">Ação</th>
+    </tr>
+  </thead>
+  <tbody>
+    @if(Model != null && Model.Any())
+    {
+        foreach(var category in Model){
+    <tr>
+      <td scope="row">@category.Id</td>
+      <td>@category.Name</td>
+      <td>@category.Description</td>
+       <td>@category.IsActive</td>
+      <td><a class="btn btn-primary btn-sm" asp-route-Id="@category.Id" asp-controller="Category" asp-action="Edit">Editar</a>
+          <a class="btn btn-danger btn-sm" asp-route-Id="@category.Id" asp-controller="Category" asp-action="Delete">Excluir</a>
+      </td>
+    </tr>
+    }
+}
+  </tbody>
+</table>
     </forms>
 </div>
 <partial name="_carousel"/>

@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\2A\\AspNetMVC\\AMS23_Carousel\\AMS23_Carousel.csproj": {}
+    "C:\\AMS\\2A\\AspNetMVC\\AMS23_Carousel\\AMS23_Carousel.csproj": {}
   },
   "projects": {
-    "C:\\2A\\AspNetMVC\\AMS23_Carousel\\AMS23_Carousel.csproj": {
+    "C:\\AMS\\2A\\AspNetMVC\\AMS23_Carousel\\AMS23_Carousel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\2A\\AspNetMVC\\AMS23_Carousel\\AMS23_Carousel.csproj",
+        "projectUniqueName": "C:\\AMS\\2A\\AspNetMVC\\AMS23_Carousel\\AMS23_Carousel.csproj",
         "projectName": "AMS23_Carousel",
-        "projectPath": "C:\\2A\\AspNetMVC\\AMS23_Carousel\\AMS23_Carousel.csproj",
-        "packagesPath": "C:\\Users\\Fatec Taqua. 10\\.nuget\\packages\\",
-        "outputPath": "C:\\2A\\AspNetMVC\\AMS23_Carousel\\obj\\",
+        "projectPath": "C:\\AMS\\2A\\AspNetMVC\\AMS23_Carousel\\AMS23_Carousel.csproj",
+        "packagesPath": "C:\\Users\\Gener\\.nuget\\packages\\",
+        "outputPath": "C:\\AMS\\2A\\AspNetMVC\\AMS23_Carousel\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Fatec Taqua. 10\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Gener\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -76,7 +74,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.404\\RuntimeIdentifierGraph.json"
         }
       }
     }

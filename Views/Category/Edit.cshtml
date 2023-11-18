@@ -17,8 +17,10 @@
     @using (Html.BeginForm("EditCat", "Category", FormMethod.Post))
     {
     <forms>
+        <input type="hidden" asp-for="Id">
        Descrição:<input asp-for="Description" asp-type="text"><br>
         Name:<input asp-for="Name" asp-type="text"><br>
+       <h4> Ativo?:<input type="checkbox" asp-for="IsActive"><br></h4>
         <input type="submit"  value="Adicionar Categoria">
     </forms>
 
